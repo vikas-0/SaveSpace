@@ -42,7 +42,7 @@
 
 ### Download Release (Recommended)
 
-1. Go to the [Releases](https://github.com/yourusername/SaveSpace/releases) page
+1. Go to the [Releases](https://github.com/vikas-0/SaveSpace/releases) page
 2. Download the latest `SaveSpace-x.x.x.dmg`
 3. Open the DMG and drag SaveSpace to Applications
 4. Launch from Applications folder
@@ -51,7 +51,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SaveSpace.git
+git clone https://github.com/vikas-0/SaveSpace.git
 cd SaveSpace
 
 # Build and run (choose one)
@@ -194,6 +194,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Made with ❤️ for macOS**
 
-[Report Bug](https://github.com/yourusername/SaveSpace/issues) • [Request Feature](https://github.com/yourusername/SaveSpace/issues)
+[Report Bug](https://github.com/vikas-0/SaveSpace/issues) • [Request Feature](https://github.com/vikas-0/SaveSpace/issues)
 
 </div>
