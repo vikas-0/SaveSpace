@@ -51,7 +51,7 @@ struct PhotoThumbnailView: View {
                 .fill(.quaternary)
                 .overlay {
                     ProgressView()
-                        .scaleEffect(0.8)
+                        .controlSize(.small)
                 }
         }
     }

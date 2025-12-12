@@ -23,7 +23,7 @@ struct ConversionProgressView: View {
             
         case .preparing:
             ProgressView()
-                .scaleEffect(1.5)
+                .controlSize(.large)
             
         case .exporting:
             Image(systemName: "square.and.arrow.up")
@@ -149,11 +149,13 @@ struct ConversionProgressView: View {
         case .preparing:
             ProgressView()
                 .progressViewStyle(.linear)
+                .frame(maxWidth: .infinity)
             
         case .exporting(let progress, _), .converting(let progress, _, _):
             VStack(spacing: 8) {
                 ProgressView(value: progress)
                     .progressViewStyle(.linear)
+                    .frame(maxWidth: .infinity)
                 
                 Text("\(Int(progress * 100))%")
                     .font(.caption)
