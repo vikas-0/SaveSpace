@@ -116,11 +116,14 @@ struct PhotoThumbnailView: View {
         let targetSize = CGSize(width: 300, height: 300)
         
         // Load thumbnail
-        let image = await PhotoKitService.shared.requestThumbnail(
+        PhotoKitService.shared.requestThumbnail(
             for: photo.asset,
             targetSize: targetSize
-        )
-        self.thumbnail = image
+        ) { image in
+            Task { @MainActor in
+                self.thumbnail = image
+            }
+        }
         
         // Load both image and video sizes
         let sizes = await ConversionService.shared.calculateAssetSizes(for: photo.asset)

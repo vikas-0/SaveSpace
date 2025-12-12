@@ -196,7 +196,7 @@ actor ConversionService {
     func batchConvertWithSinglePrompt(
         assets: [LivePhotoAsset],
         options: ConversionOptions,
-        progressHandler: @escaping (Int, Int, Int64) -> Void
+        progressHandler: @escaping @Sendable (Int, Int, Int64) -> Void
     ) async -> [ConversionResult] {
         var results: [ConversionResult] = []
         var totalSaved: Int64 = 0

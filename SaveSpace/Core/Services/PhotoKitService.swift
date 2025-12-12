@@ -5,7 +5,7 @@ import Foundation
 actor PhotoKitService {
     static let shared = PhotoKitService()
     
-    private let imageManager = PHCachingImageManager()
+    private nonisolated(unsafe) let imageManager = PHCachingImageManager()
     private var cachedAssets: [String: LivePhotoAsset] = [:]
     
     private init() {
@@ -108,7 +108,7 @@ actor PhotoKitService {
         return livePhotos
     }
     
-    func fetchAlbums() async -> [AlbumItem] {
+    nonisolated func fetchAlbums() -> [AlbumItem] {
         var albums: [AlbumItem] = []
         
         let smartAlbumTypes: [PHAssetCollectionSubtype] = [
@@ -197,27 +197,28 @@ actor PhotoKitService {
         return results.count
     }
     
-    func requestThumbnail(
+    nonisolated func requestThumbnail(
         for asset: PHAsset,
-        targetSize: CGSize
-    ) async -> NSImage? {
+        targetSize: CGSize,
+        completion: @escaping @Sendable (NSImage?) -> Void
+    ) {
         let options = PHImageRequestOptions()
         options.deliveryMode = .highQualityFormat
         options.resizeMode = .fast
         options.isNetworkAccessAllowed = true
-        options.isSynchronous = false
         
-        return await withCheckedContinuation { continuation in
-            imageManager.requestImage(
-                for: asset,
-                targetSize: targetSize,
-                contentMode: .aspectFill,
-                options: options
-            ) { image, info in
-                // Only return when we have the final image (not degraded)
-                let isDegraded = (info?[PHImageResultIsDegradedKey] as? Bool) ?? false
-                if !isDegraded {
-                    continuation.resume(returning: image)
+        imageManager.requestImage(
+            for: asset,
+            targetSize: targetSize,
+            contentMode: .aspectFill,
+            options: options
+        ) { resultImage, info in
+            // Only return when we have the final image (not degraded)
+            let isDegraded = (info?[PHImageResultIsDegradedKey] as? Bool) ?? false
+            if !isDegraded {
+                let capturedImage = resultImage
+                DispatchQueue.main.async {
+                    completion(capturedImage)
                 }
             }
         }

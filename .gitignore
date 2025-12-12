@@ -97,3 +97,7 @@ playground.xcworkspace
 ## Secrets (never commit)
 Secrets.swift
 GoogleService-Info.plist
+
+## Scripts (generated files)
+scripts/generate-icon.swift
+scripts/generate-icon.py
