@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A11111110000000000000001 /* SaveSpaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* SaveSpaceApp.swift */; };
+		A11111110000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* ContentView.swift */; };
+		A11111110000000000000003 /* LivePhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* LivePhotoAsset.swift */; };
+		A11111110000000000000004 /* AlbumItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* AlbumItem.swift */; };
+		A11111110000000000000005 /* ConversionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* ConversionOptions.swift */; };
+		A11111110000000000000006 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* SidebarItem.swift */; };
+		A11111110000000000000007 /* PhotoKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* PhotoKitService.swift */; };
+		A11111110000000000000008 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* ExportService.swift */; };
+		A11111110000000000000009 /* ConversionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* ConversionService.swift */; };
+		A11111110000000000000010 /* SpaceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010 /* SpaceCalculator.swift */; };
+		A11111110000000000000011 /* PHAsset+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* PHAsset+Extensions.swift */; };
+		A11111110000000000000012 /* FileSize+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* FileSize+Formatting.swift */; };
+		A11111110000000000000013 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* SidebarViewModel.swift */; };
+		A11111110000000000000014 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* SidebarView.swift */; };
+		A11111110000000000000015 /* PhotoLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* PhotoLibraryViewModel.swift */; };
+		A11111110000000000000016 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* PhotoGridView.swift */; };
+		A11111110000000000000017 /* PhotoThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* PhotoThumbnailView.swift */; };
+		A11111110000000000000018 /* ConversionOptionsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* ConversionOptionsSheet.swift */; };
+		A11111110000000000000019 /* ConversionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* ConversionProgressView.swift */; };
+		A11111110000000000000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* SaveSpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSpaceApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* LivePhotoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoAsset.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* AlbumItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumItem.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* ConversionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionOptions.swift; sourceTree = "<group>"; };
+		A10000000000000000000006 /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* PhotoKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoKitService.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		A10000000000000000000009 /* ConversionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionService.swift; sourceTree = "<group>"; };
+		A10000000000000000000010 /* SpaceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCalculator.swift; sourceTree = "<group>"; };
+		A10000000000000000000011 /* PHAsset+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+Extensions.swift"; sourceTree = "<group>"; };
+		A10000000000000000000012 /* FileSize+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileSize+Formatting.swift"; sourceTree = "<group>"; };
+		A10000000000000000000013 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		A10000000000000000000015 /* PhotoLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000016 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
+		A10000000000000000000017 /* PhotoThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailView.swift; sourceTree = "<group>"; };
+		A10000000000000000000018 /* ConversionOptionsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionOptionsSheet.swift; sourceTree = "<group>"; };
+		A10000000000000000000019 /* ConversionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionProgressView.swift; sourceTree = "<group>"; };
+		A10000000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000021 /* SaveSpace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveSpace.entitlements; sourceTree = "<group>"; };
+		A10000000000000000000022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000099 /* SaveSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A12000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A13000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000002 /* SaveSpace */,
+				A13000000000000000000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A13000000000000000000002 /* SaveSpace */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000003 /* App */,
+				A13000000000000000000004 /* Core */,
+				A13000000000000000000005 /* Features */,
+				A13000000000000000000006 /* Resources */,
+				A10000000000000000000021 /* SaveSpace.entitlements */,
+				A10000000000000000000022 /* Info.plist */,
+			);
+			path = SaveSpace;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000001 /* SaveSpaceApp.swift */,
+				A10000000000000000000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000004 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000007 /* Models */,
+				A13000000000000000000008 /* Services */,
+				A13000000000000000000009 /* Extensions */,
+				A13000000000000000000010 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000011 /* Sidebar */,
+				A13000000000000000000012 /* PhotoGrid */,
+				A13000000000000000000013 /* Conversion */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000020 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* LivePhotoAsset.swift */,
+				A10000000000000000000004 /* AlbumItem.swift */,
+				A10000000000000000000005 /* ConversionOptions.swift */,
+				A10000000000000000000006 /* SidebarItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000007 /* PhotoKitService.swift */,
+				A10000000000000000000008 /* ExportService.swift */,
+				A10000000000000000000009 /* ConversionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000009 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000011 /* PHAsset+Extensions.swift */,
+				A10000000000000000000012 /* FileSize+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000010 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000010 /* SpaceCalculator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000011 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000014 /* Views */,
+				A13000000000000000000015 /* ViewModels */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000012 /* PhotoGrid */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000016 /* Views */,
+				A13000000000000000000017 /* ViewModels */,
+			);
+			path = PhotoGrid;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000013 /* Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				A13000000000000000000018 /* Views */,
+			);
+			path = Conversion;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000014 /* SidebarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000015 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000013 /* SidebarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000016 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000016 /* PhotoGridView.swift */,
+				A10000000000000000000017 /* PhotoThumbnailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000017 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000015 /* PhotoLibraryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000018 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000018 /* ConversionOptionsSheet.swift */,
+				A10000000000000000000019 /* ConversionProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A13000000000000000000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000099 /* SaveSpace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14000000000000000000001 /* SaveSpace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16000000000000000000001 /* Build configuration list for PBXNativeTarget "SaveSpace" */;
+			buildPhases = (
+				A14100000000000000000001 /* Sources */,
+				A12000000000000000000001 /* Frameworks */,
+				A14200000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveSpace;
+			productName = SaveSpace;
+			productReference = A10000000000000000000099 /* SaveSpace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A15000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A14000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A16000000000000000000002 /* Build configuration list for PBXProject "SaveSpace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A13000000000000000000001;
+			productRefGroup = A13000000000000000000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14000000000000000000001 /* SaveSpace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14200000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11111110000000000000020 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14100000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11111110000000000000001 /* SaveSpaceApp.swift in Sources */,
+				A11111110000000000000002 /* ContentView.swift in Sources */,
+				A11111110000000000000003 /* LivePhotoAsset.swift in Sources */,
+				A11111110000000000000004 /* AlbumItem.swift in Sources */,
+				A11111110000000000000005 /* ConversionOptions.swift in Sources */,
+				A11111110000000000000006 /* SidebarItem.swift in Sources */,
+				A11111110000000000000007 /* PhotoKitService.swift in Sources */,
+				A11111110000000000000008 /* ExportService.swift in Sources */,
+				A11111110000000000000009 /* ConversionService.swift in Sources */,
+				A11111110000000000000010 /* SpaceCalculator.swift in Sources */,
+				A11111110000000000000011 /* PHAsset+Extensions.swift in Sources */,
+				A11111110000000000000012 /* FileSize+Formatting.swift in Sources */,
+				A11111110000000000000013 /* SidebarViewModel.swift in Sources */,
+				A11111110000000000000014 /* SidebarView.swift in Sources */,
+				A11111110000000000000015 /* PhotoLibraryViewModel.swift in Sources */,
+				A11111110000000000000016 /* PhotoGridView.swift in Sources */,
+				A11111110000000000000017 /* PhotoThumbnailView.swift in Sources */,
+				A11111110000000000000018 /* ConversionOptionsSheet.swift in Sources */,
+				A11111110000000000000019 /* ConversionProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A17000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A17000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A17000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SaveSpace/SaveSpace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SaveSpace/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savespace.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A17000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SaveSpace/SaveSpace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SaveSpace/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.savespace.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A16000000000000000000001 /* Build configuration list for PBXNativeTarget "SaveSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17000000000000000000003 /* Debug */,
+				A17000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16000000000000000000002 /* Build configuration list for PBXProject "SaveSpace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17000000000000000000001 /* Debug */,
+				A17000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A15000000000000000000001 /* Project object */;
+}

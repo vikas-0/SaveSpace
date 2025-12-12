@@ -1,0 +1,99 @@
+# Xcode
+## User settings
+xcuserdata/
+
+## Xcode build artifacts
+build/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+
+## Xcode project settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Xcode workspaces
+*.xcworkspace
+!default.xcworkspace
+
+## Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+## CocoaPods
+Pods/
+Podfile.lock
+
+## Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+## Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+## Code Injection
+iOSInjectionProject/
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+## Thumbnails
+Thumbs.db
+
+## Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+## Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+## IDE
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+## Environment
+.env
+.env.local
+*.xcconfig
+!Config/*.xcconfig
+
+## Archives
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Protobuf generated files
+*.pb.swift
+
+## Secrets (never commit)
+Secrets.swift
+GoogleService-Info.plist
